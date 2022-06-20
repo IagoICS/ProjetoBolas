@@ -7,3 +7,4 @@ Criamos o repositorio e começamos a desenvolver o projeto criando o HTML e CSS.
 Dia 20/06/2022. Segundo dia.
 
 Mudou background para roxo, estilizamos o texto e começamos a colocar a ideia no site.
+Colocamos um efeito de espectro de rádio no canvas com as bolas.
