@@ -12,9 +12,17 @@ class Bola {
  //desenha a bola na tela
     draw() {
        ctx.beginPath();
-       ctx.fillStyle = this.color;
+
        ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
        ctx.fill();
+       var grad = ctx.createRadialGradient(350,650.5, 180, 605, 308.5, 679.12);
+  
+grad.addColorStop(0, 'rgba(0, 255, 0, 1)');
+grad.addColorStop(0.41, 'rgba(35,142,35, 1)');
+grad.addColorStop(0.5, 'rgba(0,255,127, 0)');
+
+ctx.fillStyle = grad;
+ctx.fillRect(0, 0, 0, 0);
     }
  
     //atualiza a posição da bola na tela

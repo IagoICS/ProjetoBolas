@@ -8,3 +8,8 @@ Dia 20/06/2022. Segundo dia.
 
 Mudou background para roxo, estilizamos o texto e começamos a colocar a ideia no site.
 Colocamos um efeito de espectro de rádio no canvas com as bolas.
+
+Dia 21/06/2022. Terceiro dia.
+
+Fizemos um circulo ao redor da bola em gradiente e finalizamos o projeto.
+:)

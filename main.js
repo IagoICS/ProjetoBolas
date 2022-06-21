@@ -2,7 +2,7 @@ const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
 const width = canvas.width = 950;
-const height = canvas.height = 550;
+const height = canvas.height = 950;
 
 
 
@@ -22,15 +22,15 @@ function randomRGB() {
 //define um vetor de bolas
 const bolas = [];
 
-while (bolas.length < 19) {
-   const size = random(10,10);
+while (bolas.length <100) {
+   const size = random(1,2);
    const bola = new Bola(
       // posição de sempre uma bola de distância
       // fora das bordas para evitar erros de desenho
       random(0 + size,width -size),
-      random(1 + size,height - size),
-      random(20,20),
-      random(20,20),
+      random(0 + size,height - size),
+      random(5,5),
+      random(5,5),
       randomRGB(),
       size
    );
@@ -41,7 +41,7 @@ while (bolas.length < 19) {
 
 //realiza um loop em todas as bolas geradas
 function loop() {
-   ctx.fillStyle = 'rgba(0, 0, 0,0.030)';
+   ctx.fillStyle = 'rgba(0, 0,0,0.030)';
    ctx.fillRect(0, 0,  width, height);
 
    for (const bola of bolas) {
